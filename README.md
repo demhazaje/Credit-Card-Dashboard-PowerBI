@@ -1,49 +1,32 @@
-# Credit-Card-Dashboard-PowerBI
+# The Finance Group: Financial Health Power BI Dashboard
 
-# 💳 Credit Card Financial Weekly Report: Power BI Analytics
+## 📌 Project Explanation
+This project is a data analyst case study focused on creating a monthly-level interactive financial dashboard for a client called "The Finance Group." The goal was to provide an automated, visual way for leadership to monitor the company's financial health, liquidity, and operational efficiency across different regions.
 
-## 📌 Project Overview
-This repository contains the datasets and my Power BI solutions for the **Credit Card Financial Weekly Report** project. The objective of this project was to build interactive and well-organized Power BI dashboards to provide actionable insights into credit card customer demographics and their transaction patterns. 
+## 📋 Requirements
+* Design an interactive dashboard with time-period and categorical selectors.
+* Display high-level KPI cards for Revenue, Gross Margin %, EBITDA %, and Net Cash.
+* Build specific visuals including a Cash Flow Waterfall, Budget vs. Actual variance, and Receivables Aging.
+* Ensure data accuracy and document all logic and assumptions in a summary report.
 
-## 🛠️ Tools & Technologies Used
-* **Business Intelligence:** Microsoft Power BI (`.pbix`)
-* **Data Manipulation & Modeling:** Power Query, DAX (Data Analysis Expressions)
-* **Data Sources:** CSV Datasets (`customer.csv`, `CreditCard.csv`)
+## 🛠️ Tools & Technologies
+* **Business Intelligence:** Microsoft Power BI
+* **Data Manipulation:** DAX (Data Analysis Expressions), Power Query
+* **Data Source:** Microsoft Excel / CSV
 
-## 📂 Repository Contents
-* **`customer.csv`**: Contains customer demographic data including age, gender, income, education level, and satisfaction scores.
-* **`CreditCard.csv`**: Contains detailed financial and transaction data, including credit limits, transaction volumes, revolving balances, and utilization ratios.
-* **`1. Customer Data Visualisation.pbix`**: Power BI dashboard focusing on customer demographics and profiles.
-* **`2. Credit Card Data Visualization.pbix`**: Power BI dashboard focusing on transaction patterns, revenue, and spending behaviors.
-* **`Credit Card Financial weekly report OVERVIEW.pdf`**: The original project instruction document.
+## 🚧 Challenges Faced
+* **Advanced DAX Formulation:** Calculating dynamic measures like Budget Variance % and ensuring profitability ratios (EBITDA %, Gross Margin %) filtered correctly across different regional drill-downs required complex DAX logic.
+* **Visualizing Liquidity:** Formatting the Cash Flow Waterfall chart to accurately reflect starting cash, inflows, outflows, and ending net cash required precise data structuring in Power Query.
 
-## 📊 Dashboards & Key Features
+## 💡 Key Insights
+* **Revenue Stability:** The company maintains a highly predictable revenue stream, generating approximately $2M consistently every month.
+* **Operational Health:** Operational efficiency is strong, boasting a 45.6% Gross Margin and a 24.8% EBITDA margin.
+* **Budget Variance:** The company is currently underperforming against an aggressive budget by 24%, highlighting a gap in sales performance expectations versus reality.
+* **Liquidity:** The Cash Flow Waterfall visual indicates stable liquidity, with no negative dips in monthly cash flow.
 
-### Dashboard 1: Credit Card Customer Report (`1. Customer Data Visualisation.pbix`)
-This interactive dashboard visualizes key metrics related to the customer base. 
-* **Focus:** Customer demographics, income levels, and overall customer profiles.
-* **Interactive Filters / Slicers:** * **Gender Filter:** Male / Female
-  * **Age Group Filter:** Custom age bins (e.g., 18-25, 26-35, etc.)
-  * **Income Group Filter:** Categorized into Low, Medium, and High.
-
-### Dashboard 2: Credit Card Transaction Report (`2. Credit Card Data Visualization.pbix`)
-This dashboard is designed to analyze credit card transactions, spending patterns, and revenue generation.
-* **Focus:** Transaction frequencies, spending patterns, and revenue tracking.
-* **Interactive Filters / Slicers:** * **Gender Filter:** Male / Female
-  * **Transaction Date Filter:** Tracked by week number.
-  * **Spending Category Filter:** Analysis based on different expenditure types.
-
-## 🧮 DAX Calculations & Data Transformations
-To meet the project requirements, several custom DAX measures and calculated columns were created to enhance the analytical capabilities of the dashboards:
-* **Customer Segmentation:** Formulated `Age Group` and `Income Group` (Low, Med, High) columns to properly segment the user base.
-* **Revenue Metrics:** Calculated `Total Revenue`.
-* **Time Intelligence:** Created measures for `week_num`, `cur_week_revenue` (Current Week Revenue), and `previous_week_revenue` to allow for week-over-week performance tracking.
-
-## 🚀 How to Use
-1. Clone or download this repository to your local machine.
-2. Ensure you have **Microsoft Power BI Desktop** installed.
-3. Open `1. Customer Data Visualisation.pbix` or `2. Credit Card Data Visualization.pbix` to interact with the dashboards.
-4. Use the slicers on the canvas to drill through the data by gender, age, income, and week!
+## 🚀 Recommendations for Improvement
+* **Budget Re-calibration:** The 24% negative variance suggests the initial budget was overly aggressive. Future forecasting should be adjusted to align closer to the stable $2M/month historical actuals.
+* **Receivables Monitoring:** Leadership should use the Receivables Aging visual to identify specific regions with collection bottlenecks and tighten credit terms there to improve cash conversion cycles.
 
 ## 👨‍💻 About Me
-I am a data enthusiast focused on transforming raw data into meaningful, interactive visual stories. I leverage tools like Power BI, DAX, and SQL to uncover hidden business insights and support data-driven decision-making.
+I am Ejaz Ahmed, a student at IMI Kolkata with a strong focus on financial modeling, interactive dashboard design, and translating financial datasets into executive-level strategies.
